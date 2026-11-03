@@ -1,0 +1,23 @@
+# Release artifacts are not committed.
+# Binaries and tarballs go to GitHub Releases; Formula/splitjam.rb points at them.
+# The repo keeps only the scripts that produce them.
+/splitjam
+/dist/
+
+# Fallback for release.sh: it normally stages under /tmp, but never commit a stray build.
+/build/
+*.tar.gz
+*.zip
+*.dSYM/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
